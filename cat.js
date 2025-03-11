@@ -13,4 +13,5 @@ fetch("https://cataas.com/cat?type=medium&json=true")
 .then(response => response.json())
 .then(data=>{
     console.log(data.url);
+    catimage.src = data.url;
 })
