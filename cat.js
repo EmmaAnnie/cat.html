@@ -1,7 +1,7 @@
 //document.getElementById('fact')
 fact.textContent = "Loading..."
 
-fetch("https://catfact.ninja/#/Facts/getRandomFact")
+fetch("https://catfact.ninja/fact")
 .then(response => response.json())
 .then(data => {
     console.log(data)
@@ -9,7 +9,7 @@ fetch("https://catfact.ninja/#/Facts/getRandomFact")
     fact.textContent = data.fact;
 });
 
-fetch("https://cataas.com/cat")
+fetch("https://cataas.com/cat?type=medium&json=true")
 .then(response => response.json())
 .then(data=>{
     console.log(data.url);
